@@ -152,15 +152,6 @@ INSERT INTO RATING VALUES
 
 SELECT * FROM RATING;
 
--- Query 1
--- select customer.CUS_GENDER as Gender,count(customer.CUS_GENDER) as "No. of Customers"  from orders inner join customer on orders.cus_id=customer.CUS_ID 
--- where ORD_AMOUNT>=3000 group by customer.CUS_GENDER;
-
--- Query 2
--- select ord_id,pro_name,ord_amount,ord_date,SUPP_PRICE from orders inner join supplier_pricing on orders.PRICING_ID=supplier_pricing.pricing_id inner join product 
--- on supplier_pricing.PRO_ID=product.PRO_ID
---  where cus_id=2;
-
 /*
 3)Display the total number of customers based on gender who have placed orders of worth at least Rs.3000.
 */
